@@ -20,12 +20,6 @@
             ]
         }
         {
-            "pattern": "\\bbot\\b",
-            "responses": [
-                "I ***AM*** the Senate!"
-            ]
-        }
-        {
             "pattern": "not[.]? yet[.]?$",
             "responses": [
                 "It's treason, then."
