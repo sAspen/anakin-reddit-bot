@@ -16,10 +16,21 @@
         {
             "pattern": "\\bbot\\b",
             "responses": [
-                "I am a person and my name is Anakin.",
-                "[I am a person and my name is Anakin.](http://24.media.tumblr.com/tumblr_m2d149jr0i1qgzqnco1_500.gif)"
+                "I ***AM*** the Senate!"
             ]
         }
+        {
+            "pattern": "\\bbot\\b",
+            "responses": [
+                "I ***AM*** the Senate!"
+            ]
+        }
+        {
+            "pattern": "not[.]? yet[.]?$",
+            "responses": [
+                "It's treason, then."
+            ]
+        },
     ],
     "footer": {
         "sourceCodeTexts": [
