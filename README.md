@@ -1,4 +1,4 @@
-# Anakin Bot
+# The Senate Bot (forked from Anakin Bot)
 A reddit bot that responds to movie quotes from comments in [/r/PrequelMemes](https://www.reddit.com/r/PrequelMemes). It uses [**Regular Expressions**](https://en.wikipedia.org/wiki/Regular_expression) to influence the comments to create... Memes.
 
 ### Conditions
