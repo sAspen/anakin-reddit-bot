@@ -3,8 +3,8 @@
         {
             "pattern": "good bot",
             "responses": [
-                "I love democracy."
-				"And you, /u/$username, we will watch your career with great interest!"
+                "I love democracy.",
+				"And you, /u/$username, we will watch your career with great interest!",
 				"My resolve has never been strongah!"
             ]
         },
@@ -12,8 +12,8 @@
             "pattern": "bad bot",
             "responses": [
                 "It's treason, then...!"
-                "The attempt on my life has left me scarred and deformed!"
-				"Are you threatening me, /u/$username?"
+                "The attempt on my life has left me scarred and deformed!",
+				"Are you threatening me, /u/$username?",
 				"Are you threatening me, Master Jedi?"
             ]
         },
@@ -44,32 +44,37 @@
         {
             "pattern": "i shouldn't[.]*$",
             "responses": [
-                "Do it!"
+                "Do it!",
 				"Dewit!"
             ]
         },
+		{
             "pattern": "it's not the jedi way[.]?$",
             "responses": [
-                "It's only natural."
-                "It's only natural. He cut off your arm; You wanted revenge!"
+                "It's only natural.",
+                "It's only natural. He cut off your arm; You wanted revenge!",
                 "It's only natural. He downvoted you; You wanted revenge!"
             ]
         },
+		{
             "pattern": "is that[,]? legal\\?$",
             "responses": [
                 "I will make it legal!"
             ]
         },
+		{
             "pattern": "is it possible to learn this power\\?$",
             "responses": [
                 "Not from a Jedi..."
             ]
         },
+		{
             "pattern": "what have i done[.!]*?\\?!?$",
             "responses": [
                 "You're fulfilling your destiny, /u/$username."
             ]
         },
+		{
             "pattern": "((where is padm[ée])|(is she safe)|(is she ((alright)|(all right))))[.!]*?\\?!?$",
             "responses": [
                 "It seems, in your anger, you killed her..."
