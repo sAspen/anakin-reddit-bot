@@ -48,6 +48,7 @@
 		"Dewit!"
             ]
         },
+        {
             "pattern": "it's not the jedi way[.]?$",
             "responses": [
                 "It's only natural.",
@@ -60,16 +61,19 @@
                 "I will make it legal!"
             ]
         },
+        {
             "pattern": "is it possible to learn this power\?$",
             "responses": [
                 "Not from a Jedi..."
             ]
         },
+        {
             "pattern": "what have i done[.!]*?\?!?$",
             "responses": [
                 "You're fulfilling your destiny, /u/$username."
             ]
         },
+        {
             "pattern": "((where is padm[ée])|(is she safe)|(is she ((alright)|(all right))))[.!]*?\?!?$",
             "responses": [
                 "It seems, in your anger, you killed her..."
