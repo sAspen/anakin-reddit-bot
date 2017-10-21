@@ -117,11 +117,7 @@ describe('messages and responses', () => {
 
     it('should respond to commands', () => {
         let comment = {
-<<<<<<< HEAD
-            body: `Anakin, !ishouldn't`,
-=======
-            body: `Anakin, !dewit`,
->>>>>>> b1f8e238294e27303f28dfeb3c5d01a1ed4a6e5a
+            body: `Senate, !ishouldn't`,
             author: {
                 name: 'user_123456789'
             }
@@ -134,11 +130,7 @@ describe('messages and responses', () => {
 
     it('should not respond to malformed commands', () => {
         let comment = {
-<<<<<<< HEAD
             body: `!shouldnt`,
-=======
-            body: `!dewittt`,
->>>>>>> b1f8e238294e27303f28dfeb3c5d01a1ed4a6e5a
             author: {
                 name: 'user_123456789'
             }

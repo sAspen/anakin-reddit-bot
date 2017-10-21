@@ -9,10 +9,7 @@ The bot will also keep track of what comments it has sent and will perform addit
 ### Commands
 The bot will respond to the following commands:
 
-- `!dewit`
-- `!spin`
-- `!youngling`
-- `!sand`
+- `!ishouldnt`
 
 *Note: To summon the bot, your comment only needs to contain one of these strings. You do not need to put the bot's username in the comment.*
 

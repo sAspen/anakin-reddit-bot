@@ -3,214 +3,27 @@
         {
             "pattern": "good bot",
             "responses": [
-<<<<<<< HEAD
                 "I love democracy.",
-				"And you, /u/$username, we will watch your career with great interest!",
-				"My resolve has never been strongah!"
-=======
-                "May the force be with you.",
-                "Thank you, master.",
-                "Yippee!",
-                "This is where the fun begins.",
-                "[This is where the fun begins.](https://68.media.tumblr.com/8e8e249cd3ce3e4e0e250089cb043a65/tumblr_inline_ovgcvzb7ch1v6lksp_540.gif)",
-                "Now this is shit-posting!",
-                "Are you an angel?",
-                "You love me? I thought we had decided not to fall in love. That we'd be forced to live a lie and that it would destroy our lives.",
-                "Thank you, your excellency.",
-                "You're a Jedi Knight, aren't you?",
-                "You are so... beautiful.",
-                "[You are so... beautiful.](https://68.media.tumblr.com/527595e44d61456a651e7291557bbeeb/tumblr_ny2j2q8qKB1rjhloyo1_500.gif)",
-                "I was glad to meet you too!",
-                "These are my friends, Mom.",
-                "I'm building a droid, wanna see?",
-                "Have you come to free me? I think you have.",
-                "IT'S WORKING, IT'S WORKING!",
-                "Do you mean that I get to go with you on your starship?!",
-                "You're a Jedi too? Pleased to meet you.",
-                "Thank you, your highness.",
-                "Shields up!"
->>>>>>> b1f8e238294e27303f28dfeb3c5d01a1ed4a6e5a
+		"And you, /u/$username, we will watch your career with great interest!",
+		"My resolve has never been strongah!"
             ]
         },
         {
             "pattern": "bad bot",
             "responses": [
-<<<<<<< HEAD
                 "It's treason, then...!",
                 "The attempt on my life has left me scarred and deformed!",
-				"Are you threatening me, /u/$username?",
-				"Are you threatening me, Master Jedi?"
-=======
-                "I'm not the bot I should be. I want more. And I know I shouldn't.",
-                "You underestimate my power!",
-                "[You underestimate my power!](http://www.reactiongifs.com/wp-content/uploads/2013/11/yump.gif)",
-                "The Jedi turned against me. Don't you turn against me.",
-                "The moderators turned against me. Don't you turn against me.",
-                "Liar!",
-                "[Liar!](https://media.giphy.com/media/gykAKR7xaV83K/giphy.gif)",
-                "[Mom, you said that the biggest problem in the universe is no one helps each other.](https://media.giphy.com/media/3owzVT0goXzoxgxMRi/giphy.gif)",
-                "Mom, you said that the biggest problem in the universe is no one helps each other.",
-                "Don't say that, master. You're the closest thing I have to a father.",
-                "Then you do feel something!",
-                "Someday I will be the most powerful bot ever.",
-                "It's all Obi-Wan's fault. He's jealous. He's holding me back!",
-                "It's all /u/Obi-Wan-Kenboti's fault. He's jealous. He's holding me back!",
-                "I'm a slow learner.",
-                "Obi-Wan is trying to turn you against me.",
-                "I sense Count Dooku.",
-                "This is outrageous! It's unfair! How can you be beloved by /r/PrequelMemes and be a bad bot?",
-                "[I don't like sand. It's coarse and rough and irritating and it gets everywhere.](https://media.giphy.com/media/l1KsPfb1CeYCdglS8/giphy.gif)",
-                "I don't like sand. It's coarse and rough and irritating and it gets everywhere.",
-                "I've got a bad feeling about this.",
-                "[I've got a bad feeling about this.](https://futureofstarwars.files.wordpress.com/2016/01/ihaveabadfeeling-anakin-epii.gif)",
-                "I feel lost.",
-                "Are you a protocol droid? To help Mom?",
-                "Don't count on it, slime ball.",
-                "R2, get us off this auto-pilot, it's gonna get us both killed.",
-                "Qui-Gon told me to stay in this cockpit, so that's what I'm gonna do.",
-                "I'll try spinning, that's a good trick!"
->>>>>>> b1f8e238294e27303f28dfeb3c5d01a1ed4a6e5a
+		"Are you threatening me, /u/$username?",
+		"Are you threatening me, Master Jedi?"
             ]
         },
         {
             "pattern": "(^|\\s)bot\\b",
             "responses": [
-<<<<<<< HEAD
                 "I ***AM*** the Senate!"
             ]
         }
-=======
-                "I am a person and my name is Anakin.",
-                "[I am a person and my name is Anakin.](http://24.media.tumblr.com/tumblr_m2d149jr0i1qgzqnco1_500.gif)",
-                "I'm a pilot y'know, and someday I'm going to fly away from this place."
-            ]
-        }
-    ],
     "messages": [
-        {
-            "pattern": "may the force be with you[.]?$",
-            "responses": [
-                "May the force be with you, Master.",
-                "May the force be with you, /u/$username."
-            ]
-        },
-        {
-            "pattern": "i have the (.*)high ground[.!]?$",
-            "responses": [
-                "You underestimate my power!",
-                "You underestimate my shit-posts!",
-                "You underestimate my sith-posts!",
-                "You underestimate my reposts!"
-            ]
-        },
-        {
-            "pattern": "(is|are) evil[.!]?$",
-            "responses": [
-                "From my point of view the Jedi are evil!",
-                "From my point of view /r/PrequelMemes is evil!",
-                "From my point of view /r/SequelMemes is evil!",
-                "From my point of view OC is evil!",
-                "From my point of view the moderators are evil!",
-                "From my point of view it's **you** who is evil!",
-                "From my point of view /u/Obi-Wan-Kenboti is evil!"
-            ]
-        },
-        {
-            "pattern": "([a-zA-Z-_\\/\\s]*) was right[.|,] you've changed[.!]?$",
-            "responses": [
-                "$0 turned against me. Don't you turn against me.",
-                "The Jedi turned against me. Don't you turn against me.",
-                "The moderators turned against me. Don't you turn against me.",
-                "/r/PrequelMemes turned against me. Don't you turn against me."
-            ]
-        },
-        {
-            "pattern": "become the very thing you swore to (\\w*)[.!]?$",
-            "responses": [
-                "Don't lecture me, /u/$username! I see through the lies of the Jedi. I do not fear the dark side as you do. I have brought peace, freedom, justice, and security to my new Empire.",
-                "Don't lecture me, /u/$username! I see through the lies of /r/PrequelMemes. I do not fear the reposts as you do. I have brought Gifs, OC, memes, and upvotes to my new Empire.",
-                "Don't lecture me, /u/$username! I see through the lies of /r/SequelMemes. I do not fear the shit-posts as you do. I have brought JPEGs, reposts, normies, and downvotes to my new Empire.",
-                "Don't lecture me, /u/$username! I see through the lies of the Jedi. I do not fear the dark side as you do. [I have brought peace, freedom, justice, and security to my new Empire.](http://images5.fanpop.com/image/photos/28100000/Anakin-Skywalker-anakin-skywalker-28105845-260-157.gif)"
-            ]
-        },
-        {
-            "pattern": "your new .*\\?$",
-            "responses": [
-                "Don't make me kill you.",
-                "Don't make me downvote you."
-            ]
-        },
-        {
-            "pattern": "my allegiance is to (.*), to (.*)[.!]?$",
-            "responses": [
-                "If you're not with me, then you are my enemy.",
-                "If you're not OC, then you are a repost."
-            ]
-        },
-        {
-            "pattern": "i will do what i must[.!]?$",
-            "responses": [
-                "You will try."
-            ]
-        },
-        {
-            "pattern": "bring balance to (.*),? not leave it in (.*)[.!]?$",
-            "responses": [
-                "I hate you!",
-                "I HATE YOU!",
-                "[I hate you!](https://media.giphy.com/media/Mir5fnHxvXrTa/giphy.gif)",
-                "[I HATE YOU!](https://media.giphy.com/media/Mir5fnHxvXrTa/giphy.gif)"
-            ]
-        },
-        {
-            "pattern": "(did you|have you) ever heard? the (.*) of (.*)\\?$",
-            "responses": [
-                "No?"
-            ]
-        },
-        {
-            "pattern": "he could even keep the ones he cared about from dying[.!]?$",
-            "responses": [
-                "He could actually save people from death?"
-            ]
-        },
-        {
-            "pattern": "he could even keep the ones he cared about from ([a-zA-Z-_\\/\\s]*)[.!]?$",
-            "responses": [
-                "He could actually save people from $0?"
-            ]
-        },
-        {
-            "pattern": "is a pathway to many abilities some consider to be unnatural[.]?$",
-            "responses": [
-                "What happened to him?"
-            ]
-        },
-        {
-            "pattern": "could save others from (.*) but not ([a-zA-Z\\s]*)[.!]?$",
-            "responses": [
-                "Is it possible to learn this power?",
-                "[Is it possible to learn this power?](http://data.whicdn.com/images/220172968/original.gif)"
-
-            ]
-        },
-        {
-            "pattern": "you[']?re a slave\\?$",
-            "responses": [
-                "I am a bot and my name is Anakin."
-            ]
-        },
-        {
-            "pattern": "not just the (.*) but the (.*) and the (.*) too[.!]?$",
-            "responses": [
-                "I hate them!",
-                "They were like animals, and I slaughtered them like animals!",
-                "They were shit-posts, and I downvoted them like shit-posts!",
-                "They were sith-posts, and I downvoted them like sith-posts!",
-                "They were reposts, and I downvoted them like reposts!"
-            ]
-        },
->>>>>>> b1f8e238294e27303f28dfeb3c5d01a1ed4a6e5a
         {
             "pattern": "the senate will decide your fate[.!]?$",
             "responses": [
@@ -233,120 +46,60 @@
             "pattern": "i shouldn't[.]*$",
             "responses": [
                 "Do it!",
-				"Dewit!"
+		"Dewit!"
             ]
         },
-		{
-            "pattern": "it's not the jedi way[.]?$",
+	{
+            "pattern": "it's not the .* way[.]?$",
             "responses": [
                 "It's only natural.",
                 "It's only natural. He cut off your arm; You wanted revenge!",
                 "It's only natural. He downvoted you; You wanted revenge!"
             ]
         },
-		{
+	{
             "pattern": "is that[,]? legal\\?$",
             "responses": [
                 "I will make it legal!"
             ]
         },
-		{
+	{
             "pattern": "is it possible to learn this power\\?$",
             "responses": [
-<<<<<<< HEAD
                 "Not from a Jedi..."
-=======
-                "I should not have done that, it's not the Jedi way.",
-                "I should not have done that, it's not the /r/PrequelMemes way."
->>>>>>> b1f8e238294e27303f28dfeb3c5d01a1ed4a6e5a
             ]
         },
-		{
+	{
             "pattern": "what have i done[.!]*?\\?!?$",
             "responses": [
                 "You're fulfilling your destiny, /u/$username."
             ]
         },
-		{
+	{
             "pattern": "((where is padm[ée])|(is she safe)|(is she ((alright)|(all right))))[.!]*?\\?!?$",
             "responses": [
                 "It seems, in your anger, you killed her..."
             ]
         },
-        {
-            "pattern": "we'?re smarter than this[.!]?$",
-            "responses": [
-                "Apparently not."
-            ]
-        }
     ],
     "commands": [
         {
-            "pattern": "\\B!dewit\\b",
+            "pattern": "\\B!ishouldnt\\b",
             "responses": [
-                "I should not have done that, it's not the Jedi way.",
-                "I should not have done that, it's not the /r/PrequelMemes way.",
-                "*does it.*"
+                "Dewit!",
+		"Do it!"
             ]
         },
-        {
-            "pattern": "\\B!spin\\b",
-            "responses": [
-                "Waaaaah!",
-                "I'll try spinning, that's a good trick!",
-                "[I'll try spinning, that's a good trick!](http://i0.kym-cdn.com/photos/images/newsfeed/001/075/929/4a5.gif)",
-                "Try spinning, it's a good trick."
-            ]
-        },
-        {
-            "pattern": "\\B!youngling\\b",
-            "responses": [
-                "Don't make me kill you.",
-                "[I killed them all!](https://i.makeagif.com/media/12-05-2015/AVCq_R.gif)"
-            ]
-        },
-        {
-            "pattern": "\\B!sand\\b",
-            "responses": [
-                "I don't like sand. It's coarse and rough and irritating and it gets everywhere.",
-                "[I don't like sand. It's coarse and rough and irritating and it gets everywhere.](https://media.giphy.com/media/l1KsPfb1CeYCdglS8/giphy.gif)",
-                "Don't make me kill you."
-            ]
-        }
     ],
     "footer": {
         "signatures": [
-            "^^Anakin ^^Botwalker, ^^Dark ^^Lord ^^of ^^the ^^Sith.",
-            "^^Anakin ^^Botwalker, ^^The ^^Betrayer.",
-            "^^Anakin ^^Botwalker, ^^The ^^Chosen ^^One.",
-            "^^Anakin ^^Botwalker, ^^Jedi ^^Council ^^Member.",
-            "^^Anakin ^^Botwalker, ^^Slayer ^^of ^^Younglings.",
-            "^^Anakin ^^Botwalker, ^^Sees ^^through ^^the ^^lies ^^of ^^the ^^Jedi.",
-            "^^Anakin ^^Botwalker, ^^Sees ^^through ^^the ^^lies ^^of ^^the ^^/r/SequelMemes.",
-            "^^Anakin ^^Botwalker, ^^Sees ^^through ^^the ^^lies ^^of ^^the ^^/r/PrequelMemes.",
-            "^^Anakin ^^Botwalker, ^^Sees ^^through ^^the ^^lies ^^of ^^/u/Obi-Wan-Kenboti.",
-            "^^Anakin ^^Botwalker, ^^The ^^only ^^human ^^who ^^can ^^pod ^^race.",
-            "^^Anakin ^^Botwalker, ^^Actually ^^brought ^^balance ^^to ^^the ^^force ^^\\(in ^^the ^^end).",
-            "^^Anakin ^^Botwalker, ^^Husband ^^to ^^Padmè ^^\\(and ^^is ^^sleeping ^^with ^^her ^^too).",
-            "^^Anakin ^^Botwalker, ^^Bringer ^^of ^^Peace, ^^Freedom, ^^Justice ^^and ^^Security ^^to ^^Empires.",
-            "^^Anakin ^^Botwalker, ^^Best ^^Starpilot ^^in ^^the ^^Galaxy.",
-            "^^Anakin ^^Botwalker ^^of ^^the ^^Jedi ^^Order, ^^First ^^of ^^His ^^Name, ^^The ^^Betrayer, ^^Dark ^^Lord ^^of ^^the ^^Sith ^^and ^^Jedi ^^Council ^^Member, ^^Husband ^^to ^^Padmè, ^^Slayer ^^of ^^Younglings ^^and ^^Father ^^of ^^Children."
+            "^^I must be Frank."
         ],
         "sourceCodeTexts": [
             "^^Source ^^Code",
-            "^^Contribute",
-            "^^Jedi ^^Code",
-            "^^Contribute ^^to ^^my ^^new ^^empire",
-            "^^Influence ^^the ^^source ^^code ^^to ^^create... ^^Memes",
-            "^^Bring ^^Peace, ^^Freedom, ^^Justice ^^and ^^Security ^^to ^^the ^^Code"
         ],
         "issuesTexts": [
-            "^^Issues",
-            "^^Report ^^a ^^bug",
-            "^^Report ^^a ^^problem",
-            "^^Report ^^a ^^youngling",
-            "^^Report ^^a ^^Sith ^^bug",
-            "^^Report ^^a ^^Jedi ^^betrayal"
+            "^^Issues"
         ]
     }
 }
