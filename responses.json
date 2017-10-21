@@ -4,17 +4,26 @@
             "pattern": "good bot",
             "responses": [
                 "I love democracy.",
-		"And you, /u/$username, we will watch your career with great interest!",
-		"My resolve has never been strongah!"
+				"I love /r/PrequelMemes.",
+				"And you, /u/$username, we will watch your career with great interest!",
+				"My resolve has never been strongah!",
+				"My karma has never been strongah!",
+				"**Power**! *Unlimited* ***power***!",
+				"**Karma**! *Unlimited* ***karma***!"
             ]
         },
         {
             "pattern": "bad bot",
             "responses": [
                 "It's treason, then...!",
-                "The attempt on my life has left me scarred and deformed!",
-		"Are you threatening me, /u/$username?",
-		"Are you threatening me, Master Jedi?"
+				"It's downvoting, then...!",
+                "The attempt on my life has left me scarred and deformed...",
+				"The attempt on my karma has left me scarred and deformed...",
+				"Are you threatening me, /u/$username?",
+				"Are you threatening me, Master Jedi?",
+				"No... No, no! You will die!",
+				"I'm too weak... Oh, don't kill me, please.",
+				"I'm too weak... Oh, don't downvote me, please."
             ]
         },
         {
@@ -22,19 +31,43 @@
             "responses": [
                 "I ***AM*** the Senate!"
             ]
-        }
+        },
+        {
+            "pattern": "^no[.!?]*$",
+            "responses": [
+                "I thought not. It's not a story the Jedi would tell you. It's a Sith legend. Darth Plagueis was a Dark Lord of the Sith so powerful and so wise, he could use the Force to influence the midi-chlorians to create... life. He had such a knowledge of the Dark Side, he could even keep the ones he cared about... from dying."
+            ]
+		},
+		{
+            "pattern": "^what happened to him[.!?]*$",
+            "responses": [
+                "He became so powerful, the only thing he was afraid of was losing his power... which, eventually of course, he did. Unfortunately, he taught his apprentice everything he knew. Then his apprentice killed him in his sleep.\n\nIronic. He could save others from death...but not himself."
+			]
+		}
     ],
     "messages": [
         {
-            "pattern": "the senate will decide your fate[.!]?$",
+            "pattern": "He could actually[. ]+save people from ((death)|(dying))[.?]+$",
+            "responses": [
+                "The dark side of the Force is a pathway to many abilities some consider to be *unnatural*..."
+            ]
+        },
+		{
+            "pattern": "the senate will decide your fate[.!]*$",
             "responses": [
                 "I ***AM*** the Senate!"
             ]
         },
         {
-            "pattern": "([a-zA-Z-_\\/\\s]*) will decide your fate[.!]?$",
+            "pattern": "the ([a-zA-Z-_\\/\\s]*) will decide your fate[.!]*$",
             "responses": [
                 "I ***AM*** $0!"
+            ]
+        },
+        {
+            "pattern": "you have lost[.!]*$",
+            "responses": [
+                "No... No, no! You will die!"
             ]
         },
         {
@@ -44,24 +77,30 @@
             ]
         },
         {
-            "pattern": "i shouldn't[.]*$",
+            "pattern": "in the name of .* you are under arrest",
+            "responses": [
+                "Are you threatening me, Master Jedi?",
+				"Are you threatening me, /u/$username?"
+            ]
+        },
+        {
+            "pattern": "i shouldn't([,. ]*((it's not)|(it is(( not)|(n't)))) the .+ way)?[.]*$",
             "responses": [
                 "Do it!",
-		"Dewit!"
+				"Dewit!"
             ]
         },
 	{
-            "pattern": "it's not the .* way[.]?$",
+            "pattern": "i should((n't)|( not)) have .+ (it's not)|(it is(( not)|(n't)))) the .+ way[.]*$",
             "responses": [
-                "It's only natural.",
-                "It's only natural. He cut off your arm; You wanted revenge!",
-                "It's only natural. He downvoted you; You wanted revenge!"
+                "It is only natural. He cut off your arm; You wanted revenge.",
+                "It is only natural. He downvoted you; You wanted revenge."
             ]
         },
 	{
-            "pattern": "is that[,]? legal\\?$",
+            "pattern": "is that[,. ]*legal\\?$",
             "responses": [
-                "I will make it legal!"
+                "I will make it legal."
             ]
         },
 	{
@@ -73,11 +112,11 @@
 	{
             "pattern": "what have i done[.!]*?\\?!?$",
             "responses": [
-                "You're fulfilling your destiny, /u/$username."
+                "You are fulfilling your destiny, /u/$username."
             ]
         },
 	{
-            "pattern": "((where is padm[ée])|(is she safe)|(is she ((alright)|(all right))))[.!]*?\\?!?$",
+            "pattern": "((where is padm[ée])|(is she safe)|(is she ((alright)|(all right))))[.?!]*$",
             "responses": [
                 "It seems, in your anger, you killed her..."
             ]
@@ -88,7 +127,13 @@
             "pattern": "\\B!ishouldnt\\b",
             "responses": [
                 "Dewit!",
-		"Do it!"
+				"Do it!"
+            ]
+        },
+		{
+            "pattern": "\\B!plageuis\\b",
+            "responses": [
+                "Did you ever hear the Tragedy of Darth Plagueis the Wise?"
             ]
         }
     ],
