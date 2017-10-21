@@ -23,19 +23,20 @@
                 "I ***AM*** the Senate!"
             ]
         }
+    ],
     "messages": [
         {
             "pattern": "the senate will decide your fate[.!]?$",
             "responses": [
                 "I ***AM*** the Senate!"
             ]
-        }
+        },
         {
             "pattern": "([a-zA-Z-_\\/\\s]*) will decide your fate[.!]?$",
             "responses": [
                 "I ***AM*** $0!"
             ]
-        }
+        },
         {
             "pattern": "not[.,]? yet[.!]?$",
             "responses": [
@@ -80,7 +81,7 @@
             "responses": [
                 "It seems, in your anger, you killed her..."
             ]
-        },
+        }
     ],
     "commands": [
         {
@@ -89,7 +90,7 @@
                 "Dewit!",
 		"Do it!"
             ]
-        },
+        }
     ],
     "footer": {
         "signatures": [
