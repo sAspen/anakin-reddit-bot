@@ -112,12 +112,12 @@ describe('messages and responses', () => {
         let message = messages.extractReply(comment);
 
         expect(message).not.toBeNull();
-        expect(message).toContain('memes');
+        expect(message).toContain('mods');
     });
 
     it('should respond to commands', () => {
         let comment = {
-            body: `Senate, !ishouldn't`,
+            body: `Senate, !ishouldnt`,
             author: {
                 name: 'user_123456789'
             }

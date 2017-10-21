@@ -10,9 +10,9 @@
   "author": "sAspen",
   "license": "MIT",
   "dependencies": {
-    "dotenv": "^4.0.0",
+    "dotenv": "~4.0.0",
     "snoostorm": "0.0.5",
-    "snoowrap": "^1.14.2"
+    "snoowrap": "~1.14.2"
   },
   "devDependencies": {
     "jasmine": "^2.8.0"
@@ -21,5 +21,18 @@
     "/u/BlahYourHamster",
     "/u/redwallguy",
     "/u/metobi"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sAspen/thesenate-reddit-bot.git"
+  },
+  "keywords": [
+    "reddit",
+    "bot",
+    "prequelmemes"
+  ],
+  "bugs": {
+    "url": "https://github.com/sAspen/thesenate-reddit-bot/issues"
+  },
+  "homepage": "https://github.com/sAspen/thesenate-reddit-bot#readme"
 }
