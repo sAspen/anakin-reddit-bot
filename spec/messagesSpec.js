@@ -117,7 +117,7 @@ describe('messages and responses', () => {
 
     it('should respond to commands', () => {
         let comment = {
-            body: `Anakin, !ishouldn't`,
+            body: `Senate, !ishouldn't`,
             author: {
                 name: 'user_123456789'
             }
