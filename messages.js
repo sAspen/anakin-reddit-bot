@@ -3,7 +3,7 @@ const responses = require('./responses.json');
 const groupMatchRegex = /\$(\d*)/gi;
 
 function extractMessage(comment, resp) {
-    let regex = new RegExp(resp.pattern, 'gi');
+    let regex = new RegExp(resp.pattern, 'gmi');
     let matches = regex.exec(comment.body);
     let message = null;
 
@@ -11,7 +11,7 @@ function extractMessage(comment, resp) {
         //if we get to here then we can extract a response. 
         //Pick a random response to send back.
         if (resp.responses)
-            message = resp.responses[Math.floor(Math.random() * resp.responses.length)];
+            message = getRandomArrayItem(resp.responses);
         else
             message = resp.response;
 
@@ -46,16 +46,33 @@ function extractMessage(comment, resp) {
     return message;
 }
 
+function getRandomArrayItem(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+}
+
 function appendFooter(message) {
     //Get a random footer source text.
-    let sourceText = responses.footer.sourceCodeTexts[Math.floor(Math.random() * responses.footer.sourceCodeTexts.length)];
-    let issuesText = responses.footer.issuesTexts[Math.floor(Math.random() * responses.footer.issuesTexts.length)];
+    let signatureText = getRandomArrayItem(responses.footer.signatures);
+    let sourceText = getRandomArrayItem(responses.footer.sourceCodeTexts);
+    let issuesText = getRandomArrayItem(responses.footer.issuesTexts);
 
     return message + `
 *****
-^Virtual ^master ^((and sleeping with Padmè)^) ^Anakin ^Botwalker
+${signatureText}
 
-[${sourceText}](${process.env.GITHUB_SOURCE_URL}) ^| [${issuesText}](${process.env.GITHUB_ISSUES_URL})`;
+[${sourceText}](${process.env.GITHUB_SOURCE_URL}) ^^| [${issuesText}](${process.env.GITHUB_ISSUES_URL})`;
+}
+
+function findAndExtractMessage(comment, arr) {
+    for(let i = 0; i < arr.length; i++) {
+        let resp = arr[i];
+        let message = extractMessage(comment, resp);
+
+        if (message)
+            return message;
+    }
+
+    return null;
 }
 
 module.exports = {
@@ -65,30 +82,26 @@ module.exports = {
         if (comment.author.name === process.env.REDDIT_USER)
             return null;
     
-        let message;
+        let message = null;
         
         if (prevCommentIds.includes(comment.parent_id)) {
             //This comment is a reply to one of ours, check for a reply.
-            for(let i = 0; i < responses.replies.length; i++) {
-                let resp = responses.replies[i];
-                message = extractMessage(comment, resp);
-    
-                if (message)
-                    return message;
-            }
+            message = findAndExtractMessage(comment, responses.replies);
         }
+
+        if (message)
+            return message;
     
-        //if we get to here then check if the comment contains one of
-        //our key phrases and send back a response.
-        for(let i = 0; i < responses.messages.length; i++) {
-            let resp = responses.messages[i];
-            let message = extractMessage(comment, resp);
+        //Try and find a response to a message.
+        message = findAndExtractMessage(comment, responses.messages);
+
+        if (message)
+            return message;
+
+        //Try and find a response to a command.
+        message = findAndExtractMessage(comment, responses.commands);
     
-            if (message)
-                return message;
-        }
-    
-        return null;
+        return message;
     }
 
 };
