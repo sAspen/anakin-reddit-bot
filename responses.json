@@ -127,7 +127,7 @@
             ]
         },
 		{
-            "pattern": "\\B!plageuis\\b",
+            "pattern": "\\B!plag((eu)|(ue))is\\b",
             "responses": [
                 "Did you ever hear the Tragedy of Darth Plagueis the Wise?"
             ]
