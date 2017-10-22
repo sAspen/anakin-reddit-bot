@@ -10,7 +10,8 @@
 		"My karma has never been strongah!",
 		"**Power**! *Unlimited* ***power***!",
 		"**Karma**! *Unlimited* ***karma***!",
-		"Good, /u/$username! Good..."
+		"Good, /u/$username! Good...",
+		"A surprise, to be sure, but a welcome one."
             ]
         },
         {
@@ -106,7 +107,7 @@
             ]
         },
 	{
-            "pattern": "what have i done[.!]*?\\?!?$",
+            "pattern": "what have i done[.!?]*$",
             "responses": [
                 "You are fulfilling your destiny, /u/$username."
             ]
