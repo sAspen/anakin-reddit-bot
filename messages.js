@@ -58,9 +58,10 @@ function appendFooter(message) {
 
     return message + `
 *****
+
 ${signatureText}
 
-[${sourceText}](${process.env.GITHUB_SOURCE_URL}) ^^| [${issuesText}](${process.env.GITHUB_ISSUES_URL})`;
+^^\\(In ^^testing) [${sourceText}](${process.env.GITHUB_SOURCE_URL}) ^^| [${issuesText}](${process.env.GITHUB_ISSUES_URL})`;
 }
 
 function findAndExtractMessage(comment, arr) {
@@ -75,15 +76,34 @@ function findAndExtractMessage(comment, arr) {
     return null;
 }
 
+function handleParent(comment, parent) {
+    if (parent.body.toLowerCase() == "did you ever hear the tragedy of darth plagueis the wise?") {
+	let regex = new RegExp("^no[.!?]*$", 'gmi');
+	let matches = regex.exec(comment.body);
+	if (matches && matches.length > 0) 
+	    return appendFooter("I thought not. It's not a story the Jedi would tell you. It's a Sith legend. Darth Plagueis was a Dark Lord of the Sith so powerful and so wise, he could use the Force to influence the midi-chlorians to create... life. He had such a knowledge of the Dark Side, he could even keep the ones he cared about... from dying.");
+    }
+    return null;
+}
+
 module.exports = {
 
-    extractReply(comment, prevCommentIds = []) {
+    extractReply(comment, prevCommentIds = [], parent) {
         //make sure we're not replying to ourselves.
         if (comment.author.name === process.env.REDDIT_USER)
             return null;
     
         let message = null;
-        
+
+	//Check if the current comment is a correct response to a previous post
+	if (parent.constructor.name == "Comment") {
+	    console.log(`  (Parent: ${parent.author.name}: ${parent.body})`);
+	    message = handleParent(comment, parent);
+	}
+
+        if (message)
+            return message;
+
         if (prevCommentIds.includes(comment.parent_id)) {
             //This comment is a reply to one of ours, check for a reply.
             message = findAndExtractMessage(comment, responses.replies);
